@@ -1,22 +1,31 @@
-body, html {
+/* Reset e overflow */
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* remove barra lateral */
+  box-sizing: border-box;
 }
 
-/* Home / seção amarelo */
+/* Home / fundo amarelo */
 .home-section {
   background-color: #ffc107;
   color: white;
+  width: 100%;
   padding: 60px 0;
-  width: 100%; /* usa 100% da largura da tela sem causar overflow */
-  box-sizing: border-box; /* garante que padding não aumente largura */
 }
 
-/* Seções com borda inferior */
+/* Seções gerais */
 .caixa {
+  width: 100%;
   padding: 60px 0;
   border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+/* Container padding para home */
+.home-section .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Footer links */
@@ -24,15 +33,23 @@ footer p a {
   margin: 5px 15px;
 }
 
-/* Container dentro do fundo amarelo */
-.home-section .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 /* Imagens responsivas */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Seção recursos - texto centralizado no mobile */
+.caixa.text-center img {
+  margin-bottom: 20px;
+}
+
+/* Ajuste navbar para mobile */
+.navbar-nav .nav-item .btn {
+  margin-top: 10px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 0.5rem;
 }
