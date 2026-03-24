@@ -16,3 +16,21 @@ footer p a {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+.bg-warning {
+  width: 100vw;      
+  margin: 0;          
+  padding: 40px 0;    
+}
+
+body {
+  overflow-x: hidden;  
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
